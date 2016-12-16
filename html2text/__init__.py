@@ -81,6 +81,7 @@ class HTML2Text(HTMLParser.HTMLParser):
         self.pad_tables = config.PAD_TABLES  # covered in cli
         self.default_image_alt = config.DEFAULT_IMAGE_ALT  # covered in cli
         self.tag_callback = None
+        self.unifiable = config.UNIFIABLE
 
         if out is None:  # pragma: no cover
             self.out = self.outtextf
